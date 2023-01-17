@@ -1,0 +1,43 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: #332D41;
+    color: #CCC2DC;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    margin: 1vh;
+    width : 50vw;
+    max-width: 200px;
+    border: none;
+    border-radius: 8px;
+    background-color: #EADDFF;
+    color: #332D41;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:active, button:hover {
+    background-color: #332D41; 
+    color: #EADDFF;
+  }
+
