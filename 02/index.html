@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주사위 게임</title>
+    <link rel="stylesheet" href="./syles/index.css">
+    <script src="./scripts/index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>주사위 게임</h1>
+    </header>
+
+    <main id="content">
+        <section id="s1"></section> <!--주사위이미지-->
+
+        <section id="s2"> <!--번호선택-->
+            <form name="form1" id="form1">
+                <fieldset>
+                    <legend>번호 선택</legend>
+                    <input type="radio" name="num" value="1" id="r1"><label for="r1"> 1 </label>
+                    <input type="radio" name="num" value="2" id="r2"><label for="r2"> 2 </label>
+                    <input type="radio" name="num" value="3" id="r3"><label for="r3"> 3 </label>
+                    <input type="radio" name="num" value="4" id="r4"><label for="r4"> 4 </label>
+                    <input type="radio" name="num" value="5" id="r5"><label for="r5"> 5 </label>
+                    <input type="radio" name="num" value="6" id="r6"><label for="r6"> 6 </label>
+                </fieldset>             
+            </form>
+        </section>
+
+        <section id="s3"> <!--결과확인영역 OX-->
+                         ox        
+        </section>
+
+        <section id="s4">   <!--버튼 영역-->
+            <button id="bt1" onclick="showDice()">주사위 선택</button>
+            <button id="bt2" onclick="showDice()">확인</button> 
+        </section>
+
+    </main>
+</body>
+</html>
