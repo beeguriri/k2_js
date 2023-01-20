@@ -13,7 +13,11 @@
     </header>
 
     <main id="content">
-        <section id="s1"></section> <!--주사위이미지-->
+        <section>  <!--주사위이미지-->
+            <div id="s1">
+                주사위이미지        
+             </div>  
+        </section>
 
         <section id="s2"> <!--번호선택-->
             <form name="form1" id="form1">
@@ -29,13 +33,15 @@
             </form>
         </section>
 
-        <section id="s3"> <!--결과확인영역 OX-->
-                         ox        
+        <section> <!--결과확인영역 OX-->
+            <div id="s3">
+                    ox        
+            </div>               
         </section>
 
         <section id="s4">   <!--버튼 영역-->
-            <button id="bt1" onclick="showDice()">주사위 선택</button>
-            <button id="bt2" onclick="showDice()">확인</button> 
+            <button id="bt1" onclick="showDice();">주사위 선택</button>
+            <button id="bt2" onclick="showOK();">확인</button> 
         </section>
 
     </main>

@@ -47,6 +47,11 @@ section {
     display : flex;
     justify-content: center;    /*border영역의 가운데에 정렬*/
     align-items: center;
+    text-align: center;
+}
+
+#s4 {
+    height : 10vh;
 }
 
 form {
