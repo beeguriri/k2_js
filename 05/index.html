@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 태그 연습</title>
+    <style>
+        input[type=text], input[type=password], select {
+            width:200px;
+            padding: 12px 20px;
+            margin: 8px 0px;
+            box-sizing: border-box;
+        }
+
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        .button:hover, .button:active {
+            background-color: darkblue;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        #msg > span {
+            color: blue;
+            font-weight: bold;
+        }
+
+    </style>
+
+    <script>
+        const formCheck = () => {
+            
+            //아이디확인
+            if(myform.txt1.value == "") {
+                alert("아이디를 입력하세요.") //메시지창 띄워줌
+                myform.txt1.focus();
+                return;
+            }
+
+            //비밀번호 확인
+            if(myform.txt2.value == "") {
+                alert("비밀번호를 입력하세요.")
+                myform.txt2.focus();
+                return;
+            }
+
+            //입력완료
+            document.querySelector('#msg').innerHTML = 
+            `아이디 <span>${myform.txt1.value}</span>님의 선택과목은 
+            <span>${myform.sel1.value}</span>입니다.`;
+        };
+    </script>
+</head>
+<body>
+    <form name="myform">
+        <p>
+            <label for="txt1">아이디 : </label><br>
+            <input type="text" name="txt1" id="txt1" placeholder="아이디 입력">
+        </p>
+        <p>
+            <label for="txt2">비밀번호 : </label><br>
+            <input type="password" name="txt2" id="txt2" placeholder="비밀번호 입력">
+        </p>
+        <p>
+            <label for="txt2">선택과목 : </label><br>
+            <select name="sel1">
+                <option value="자바">자바</option>
+                <option value="HTML">HTML</option>
+                <option value="자바스크립트" selected>자바스크립트</option>
+                <option value="리액트">리액트</option>
+            </select>
+        </p>
+        <p>
+            <input class="button" type="button" value="확인" onclick="formCheck()">
+            <input class="button" type="reset" value="취소">    <!--폼태그 내의 요소 리셋-->
+        </p>
+    </form>
+
+    <div id="msg">
+
+    </div>
+</body>
+</html>
